@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --plant-green: #50806B;
+  --secondary-green: #E8EDDE;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-open-sans);
+}
+
+h1{
+  font-weight: 500;
+  font-size: 30px;
+  font-family: var(--font-poppins);
+}
+
+
+.small-bold{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.attribute{
+  color: grey;
+  line-height: 25px;
+}
+
+.page-content{
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.size-button{
+  border: 1px solid;
+  padding: 10px;
+  height:40px;
+  width:40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.main-button{
+  background-color: var(--plant-green);
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  
+}
+
+.checkout-button{
+  background-color: var(--plant-green);
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  
+}
+
+.card{
+  box-shadow: 1px 1px 6px rgb(32, 32, 32, .3);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.selected{
+  background-color: var(--secondary-green);
+}
+
+.product-image{
+  border-radius: 5px;
+}
+
+.recommended-plants{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+  overflow: scroll;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+.col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.product-image-collection{
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 250px 250px;
+  column-gap: 10px;
+}
+
+.browse-plant-grid{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+}
+
+
