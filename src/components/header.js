@@ -29,7 +29,7 @@ export default function Header({cart, setCart}){
             </div>
             <div className = "nav-bar">
                 <h1><span style = {{color: "var(--plant-green)"}}>Green</span> Thumb</h1>
-                <div style = {{display: "flex"}}> 
+                <div style = {{display: "flex", gap: "60px"}}> 
                     <div className = "nav-bar-items">
                         <p>Home</p>
                         <a href = "/products">Products</a>
